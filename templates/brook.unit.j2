@@ -1,0 +1,17 @@
+[Unit]
+Description=brook
+After=syslog.target
+After=network.target
+
+[Service]
+
+Type=simple
+User={{ brook_user }}
+Group={{ brook_group }}
+WorkingDirectory={{ brook_working_dir }}
+
+ExecStart={{ brook_exec_shell }}
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

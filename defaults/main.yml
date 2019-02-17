@@ -1,0 +1,16 @@
+---
+
+brook_user: brook
+brook_group: brook
+
+brook_version: 20190205
+
+brook_uri: https://github.com/txthinking/brook/releases/download
+brook_url: "{{ brook_uri }}/v{{ brook_version }}/brook"
+
+service_name: brook_server
+
+brook_global: ~
+brook_command: server
+brook_options: --listen :1080 --password 123456
+brook_arguments: ~

@@ -1,0 +1,29 @@
+---
+
+galaxy_info:
+  author: Ztj
+  description: ansible-role-brook
+  min_ansible_version: 2.1
+  license: MIT
+  issue_tracker_url: https://github.com/ztj1993/ansible-role-brook/issues
+
+  platforms:
+    - name: EL
+      versions:
+        - 7
+    - name: Ubuntu
+      versions:
+        - trusty
+        - xenial
+        - bionic
+    - name: Debian
+      versions:
+        - all
+
+  galaxy_tags:
+    - brook
+    - vpn-server
+    - proxy-server
+    - proxy
+
+dependencies: []

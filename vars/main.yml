@@ -1,0 +1,5 @@
+---
+
+brook_working_dir: /home/{{ brook_user }}
+brook_bin: /usr/local/bin/brook_{{ brook_version }}
+brook_exec_shell: "{{ brook_working_dir }}/{{ service_name }}.sh"
