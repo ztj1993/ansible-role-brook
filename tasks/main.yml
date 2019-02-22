@@ -37,7 +37,7 @@
     dest: /etc/systemd/system/{{ service_name }}.service
   when: ansible_service_mgr == "systemd"
   notify: restart {{ service_name }}
-- name: enable and start the gitea web service
+- name: enable and start the brook service
   service:
     name: "{{ service_name }}"
     state: started
