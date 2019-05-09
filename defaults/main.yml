@@ -3,7 +3,7 @@
 brook_user: brook
 brook_group: brook
 
-brook_version: 20190205
+brook_version: 20190401
 
 brook_uri: https://github.com/txthinking/brook/releases/download
 brook_url: "{{ brook_uri }}/v{{ brook_version }}/brook"
