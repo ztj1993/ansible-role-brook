@@ -11,12 +11,10 @@ galaxy_info:
   platforms:
     - name: EL
       versions:
-        - 7
+        - all
     - name: Ubuntu
       versions:
-        - trusty
-        - xenial
-        - bionic
+        - all
     - name: Debian
       versions:
         - all
