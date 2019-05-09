@@ -1,6 +1,7 @@
 ---
 
 galaxy_info:
+  role_name: brook
   author: Ztj
   description: ansible-role-brook
   min_ansible_version: 2.1
