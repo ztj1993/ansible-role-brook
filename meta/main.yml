@@ -23,8 +23,9 @@ galaxy_info:
 
   galaxy_tags:
     - brook
-    - vpn-server
-    - proxy-server
+    - vpnserver
+    - proxyserver
+    - vpn
     - proxy
 
 dependencies: []
