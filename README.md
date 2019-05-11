@@ -45,13 +45,14 @@ Example Playbook
 
     $ cat playbook.yml
     - name: "Install brook server"
-      hosts: all
+      hosts: 127.0.0.1
+      sudo: yes
       roles:
-       - role: ansible-brook
-         service_name: brook_server
-         brook_command: server
-         brook_command_options: --listen :9999 --password 123456
-
+        - role: brook
+          service_name: brook_server
+          brook_command: server
+          brook_command_options: --listen :9999 --password 123456
+    $ ansible-playbook playbook.yml --ask-sudo-pass
 License
 -------
 
