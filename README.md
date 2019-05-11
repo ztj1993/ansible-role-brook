@@ -28,9 +28,9 @@ Generated service name.
 
 Name and group of the user running Brook.
 
-    brook_global: ~
+    brook_global_options: ~
     brook_command: server
-    brook_options: --listen :1080 --password 123456
+    brook_command_options: --listen :1080 --password 123456
     brook_arguments: ~
 
 Brook command.
@@ -50,7 +50,7 @@ Example Playbook
        - role: ansible-brook
          service_name: brook_server
          brook_command: server
-         brook_options: --listen :9999 --password 123456
+         brook_command_options: --listen :9999 --password 123456
 
 License
 -------

@@ -10,7 +10,7 @@ brook_url: "{{ brook_uri }}/v{{ brook_version }}/brook"
 
 service_name: brook_server
 
-brook_global: ~
+brook_global_options: ~
 brook_command: server
-brook_options: --listen :1080 --password 123456
+brook_command_options: --listen :1080 --password 123456
 brook_arguments: ~
