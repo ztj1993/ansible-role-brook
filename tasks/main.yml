@@ -37,7 +37,7 @@
     dest: /etc/systemd/system/{{ service_name }}.service
   when: ansible_service_mgr == "systemd"
   notify: restart {{ service_name }}
-- name: create the gitea init.d start-up script
+- name: create the brook init.d start-up script
   template:
     src: brook.init.j2
     dest: "/etc/init.d/{{ service_name }}"
