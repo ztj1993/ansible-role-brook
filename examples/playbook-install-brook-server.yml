@@ -1,0 +1,10 @@
+---
+- name: "Install brook server"
+  hosts: localhost
+  roles:
+    - role: brook
+      vars:
+        brook_mirror: https://ghproxy.com/https://github.com
+        service_name: brook-server
+        brook_command: server
+        brook_command_options: --listen :9999 --password 123456
