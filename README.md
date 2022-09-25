@@ -5,6 +5,11 @@ Ansible Role: Brook
 
 这个 Role 用于安装和配置 [Brook](https://github.com/txthinking/brook)，Brook 是一个代理服务器&客户端软件。
 
+Install
+------------
+
+    ansible-galaxy install ztj1993.brook
+
 Requirements
 ------------
 
@@ -15,7 +20,7 @@ Role Variables
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-    brook_version: 20190205
+    brook_version: 20220707
 
 Path to the file containing the Gitea configuration ENV variables.
 
@@ -43,16 +48,19 @@ None.
 Example Playbook
 ----------------
 
-    $ cat playbook.yml
+    $ cat playbook-install-brook-server.yml
+
     - name: "Install brook server"
-      hosts: 127.0.0.1
-      sudo: yes
+      hosts: localhost
       roles:
         - role: brook
-          service_name: brook_server
+          vars:
+          service_name: brook-server
           brook_command: server
           brook_command_options: --listen :9999 --password 123456
-    $ ansible-playbook playbook.yml --ask-sudo-pass
+
+    $ ansible-playbook playbook-install-brook-server.yml
+
 License
 -------
 
